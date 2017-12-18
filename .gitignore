@@ -6,3 +6,4 @@ semantic/tasks/
 
 test/integration/artifacts/*
 !test/integration/artifacts/baseline/
+/semantic
