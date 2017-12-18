@@ -221,6 +221,7 @@ class StatisticBlock extends Component {
         fontStyles: {},
         kpiLink: item.kpiLink,
         useLink: item.useLink,
+        openUrlInNewTab: item.openUrlInNewTab,
         textAlignment: item.textAlignment,
         infographic: item.infographic,
         embeddedItem: item.embeddedItem,
@@ -392,7 +393,8 @@ class StatisticBlock extends Component {
         linkId = kpi.kpiLink && kpi.kpiLink.id;
 
       if(linkId)
-        services.Routing.goToSheet(linkId, 'analysis');
+        var url = services.Routing.getUrlForSheet(linkId, "analysis");
+        kpi.openUrlInNewTab ? window.open(url) : services.Routing.goToSheet(linkId, "analysis");
     }
   }
 

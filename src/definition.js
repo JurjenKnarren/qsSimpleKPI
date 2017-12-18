@@ -111,6 +111,23 @@ let kpis = {
             show : function (data) {
               return data.qDef.useLink;
             }
+          },
+          openUrlInNewTab: {
+              ref: "qDef.openUrlInNewTab",
+              type: "boolean",
+              component: "switch",
+              translation: "properties.kpi.openUrlInNewTab",
+              defaultValue: !0,
+              options: [{
+                  value: !0,
+                  translation: "properties.on"
+              }, {
+                  value: !1,
+                  translation: "properties.off"
+              }],
+              show: function(data) {
+                  return data.qDef.useLink
+              }
           }
         }
       },
