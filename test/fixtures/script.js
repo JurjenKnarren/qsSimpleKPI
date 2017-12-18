@@ -17,7 +17,7 @@ var config={
 	isSecure:false,
 	rejectUnauthorized:false,
 //	apiKey: sessionStorage.getItem( "apiKey" ),
-	appname: "C:/Users/nerush/Documents/Qlik/Sense/Apps/Helpdesk Management.qvf" //"3dd4b687-dd73-4760-9567-07ebbc9e5852"
+	appname: "C:\Users\Jurjen\Documents\Qlik\Sense\Apps\Executive Dashboard.qvf" //"3dd4b687-dd73-4760-9567-07ebbc9e5852"
 };
 
 function authenticate() {
